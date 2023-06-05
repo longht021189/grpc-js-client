@@ -1,0 +1,16 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-grpc-client-generator": "cd .. && pnpm build",
+    "run-grpc-client-generator": "grpc-client-generator",
+    "test": "pnpm build-grpc-client-generator && pnpm run-grpc-client-generator"
+  },
+  "dependencies": {
+    "grpc-js-client": "file:../"
+  },
+  "author": "",
+  "license": "ISC"
+}
